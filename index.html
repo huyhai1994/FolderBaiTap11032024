@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let quit = false;
+    while (!quit)
+    {
+        let askForQuit = prompt("Do you want to quit? [Y/N]");
+        if (askForQuit === "N")
+        {
+            quit = true;
+            let Score = prompt ("Nhập vào điểm");
+            try{
+                if (Score > 100 || Score<0)
+                {
+                    console.log("Nhập lại");
+                }
+                else {
+                    if (Score >= 90) {
+                        console.log("Tốt");
+                    }else if (Score >= 70 && Score <= 89){
+                        console.log("Khá");
+                    } else if (Score >= 50 && Score <= 69) {
+                        console.log("Trung bình");
+                    } else {
+                        console.log("Yếu");
+                    }
+                }
+            }
+            catch (err)
+            {
+                alert(err.message);
+                alert("không nhập Scrore rồi !!!")
+            }
+        }
+
+    }
+
+
+</script>
+</body>
+</html>

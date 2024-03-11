@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a = prompt("nhập số a: ");
+    let b = prompt("nhập số b: ");
+    let c = prompt("nhập số c: ");
+    let number_a = Number(a);
+    let number_b = Number(b);
+    let number_c = Number(c);
+    console.log((number_a > number_b && number_a > number_c) ?
+        String(number_a) + " max" : (number_b < number_c) ?
+            String(number_c) + " max" :
+            String(number_b) + " max")
+</script>
+</body>
+</html>
